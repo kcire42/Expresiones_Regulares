@@ -1,0 +1,21 @@
+\w -> buscar palabras
+\d -> buscar numeros del 1 al 9
+\s -> espacios/invisibles en blanco
+[] -> hacer cadenas 
+[0-9] -> \d
+[0-9a-zA-Z] -> numeros del 1 al 9 y letras minusculas de a a la z y mayusculas de A a la Z
+. -> cualquier caracter
+* -> todo
++ -> 1 o mas 
+? -> 0 o 1 
+{numero} -> especifica el numero -> {1,4}  -> \d{1,8} buscar combinacion de 1 a 8 digitos
+\d{10,10}-> buscar numero de 10 a 10 digitos
+\ -> incluye caracteres especiales 
+\d{2,2}[\-\.]?\d{2,2}[\-\.]?\d{2,2}[\-\.]?\d{2,2}[\-\.]?\d{2,2}[\-\.]? -> buscar digitos de dos en dos que esten separado por - ó . ó que no tengan ninguno de los dos esto por 10 
+\D not numeros
+^ not -> [^0-5a-c] == [6-9d-z] se debe de tener cuidado con los not por que me puede llegar a mandar basura o falsos positivos
+([\d]{2}[\-\.\s][\d]{2}[\-\.\s][\d]{2}|[\d]{6})-> buscador de telefonos de 6 digitos con diferente espacioador y que discrimine letras
+^----$ -> inicio y final de linea es un limitador que indica que debe de concidir en la linea si o si sin salto o interrupcion osea toda la linea
+^\[LOG.*\[WARN\].*$ -> COMO BUSCAR CON ES ESPECIFICIO EN USANDO MIS COMANDOS DE INICIO Y FIN DE LINEA ASI COMO BUSCAQUEDA DE caracteres especiales
+\+?\d{2,2}[\-\.\s\w]?\d{2,2}[\-\.\s\w]?\d{2,2} -> este regex busca numero con diferentes puntos intermedios como guion espacio letra y espacio de dos en 2 y que pueden 
+iniciar con un simbolo de + o con nada 
