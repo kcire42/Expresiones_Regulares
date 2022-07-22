@@ -19,3 +19,11 @@
 ^\[LOG.*\[WARN\].*$ -> COMO BUSCAR CON ES ESPECIFICIO EN USANDO MIS COMANDOS DE INICIO Y FIN DE LINEA ASI COMO BUSCAQUEDA DE caracteres especiales
 \+?\d{2,2}[\-\.\s\w]?\d{2,2}[\-\.\s\w]?\d{2,2} -> este regex busca numero con diferentes puntos intermedios como guion espacio letra y espacio de dos en 2 y que pueden 
 iniciar con un simbolo de + o con nada 
+https?:\/\/[\w\-\.]+\.\w*\/\w*\/\w* -> inicia con busca http y la s puedeo no puede estar coloco los caracteres especiales de las diagonales, inicio con palabra 
+y  caracter especiales
+[\w\._]{5,30}\+?[\w]{0,10}@\w*\.\w*\.?\w{1,}-> rutina para email
+-?\d{1,6}[\.\s]\d{1,6},\s?\d{1,6}[\.\s]\d{1,6},?-?\d{1,6}[\.\s]?(\d{1,6})?-> tipo de coordenadas -99.204654,19.428952,2275.58
+-?\d{1,2}\s-?\d{1,2}'\s\d{1,2}\.\d{1,2}"[WESN],\s?-?\d{1,2}\s-?\d{1,2}'\s\d{1,2}\.\d{1,2}"[WESN]-> busqueda de coordenadas -34 54' 32.00"E, -3 21' 67.00"S
+^\d+::([\w\s:,.\(\)'-]+\s\((\d{4})\))::.*$ -> busqueda de texto en una base de datos de peliculas movie dao 
+como punto a definir se puede definir los grupos entre parentesis y hacerles referencia de la siguiente manera
+$1,$2 que vendria siendo como grupo 1 y grupo 2 
