@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Regex_Pattern = r'__________'	# Do not delete 'r'.
 
 import re
@@ -17,3 +18,12 @@ print(str(bool(re.search(Regex_Pattern, input()))).lower())
 4
 d
 A
+=======
+x4202v2A22A9a6aaaaaa2G2222m222qwertyYuIo13957
+2222222222aaaaaaaaaa2222222222aaaaaaaaaa13 57
+x4202v2A22A9a6aaaaaa2G2222m222qwertyYuIo13957
+x4202v2A22A9a6aaaaaa2G2222m222qwertyYuIo13957
+^[a-zA-Z02468]{40}[13579\\s]{5}$
+
+^[02468A-Za-z]{40}[13579\s]{5}$
+>>>>>>> fdc81e27658b432d7875549ceb0b4b786eff72ee
